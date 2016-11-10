@@ -10,28 +10,14 @@
 		<script src="js/segment.min.js"></script>
 		<script src="js/ease.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      var borderTop;
-      var borderBot;
-      var borderLeft;
-      var borderRight;
-      $(document).ready(function() {
-        borderTop = $(".bandeau").height()*0.80;
-        borderRight = $(".timg").width()*0.65;
-        borderLeft = $(".timg").width()*0.35;
-        borderBot = $(".bandeau").height()*0.20;
-        $('.timg').css({'border-top-width':+ borderTop +'px'})
-        $('.timg').css({'border-right-width':+ borderRight +'px'})
-        $('.timg').css({'border-left-width':+ borderLeft +'px'})
-        $('.timg').css({'border-bottom-width':+ borderBot +'px'})
-        // $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-        // 	var page = $(this).attr('href'); // Page cible
-        // 	var speed = 750; // Durée de l'animation (en ms)
-        // 	$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-        // 	return false;
-        // });
-      });
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.js-scrollTo').on('click', function() {
+        	var page = $(this).attr('href');
+        	var speed = 750;
+        	$('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+        	return false;
+       });
     </script>
   </head>
   <body>
@@ -62,22 +48,41 @@
         </div>
       </div>
     </div>
-    <div class="bandeau flex-r">
-      <div class="timg">
-      </div>
-      <div class="flex-c activite">
-        <h2>Acitivités</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rutrum nisi vitae gravida. Proin euismod nulla elit, eu maximus risus pretium at. Morbi mi nisl, ultrices eget lacinia a, vulputate vel ligula. Duis vitae arcu in eros efficitur pharetra. Integer pretium porttitor lorem eu vehicula. Integer et ex sit amet est cursus scelerisque quis a libero.</p>
+
+    <div class="mini-parallax" id="two">
+      <div class="opacity">
+        <div class="bandeau left flex-r">
+          <div class="contenue flex-c">
+            <h2>Acitivités</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rutrum nisi vitae gravida. Proin euismod nulla elit, eu maximus risus pretium at. Morbi mi nisl, ultrices eget lacinia a, vulputate vel ligula. Duis vitae arcu in eros efficitur pharetra. Integer pretium porttitor lorem eu vehicula. Integer et ex sit amet est cursus scelerisque quis a libero.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="parallax" id="two">
-      <div class="opacity flex-c">
+    <div class="mini-parallax" id="three">
+      <div class="opacity">
+        <div class="bandeau right">
+          <div class="contenue flex-c">
+            <h2>Acitivités</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rutrum nisi vitae gravida. Proin euismod nulla elit, eu maximus risus pretium at. Morbi mi nisl, ultrices eget lacinia a, vulputate vel ligula. Duis vitae arcu in eros efficitur pharetra. Integer pretium porttitor lorem eu vehicula. Integer et ex sit amet est cursus scelerisque quis a libero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mini-parallax" id="one">
+      <div class="opacity">
+        <div class="bandeau left flex-r">
+          <div class="contenue flex-c">
+            <h2>Acitivités</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rutrum nisi vitae gravida. Proin euismod nulla elit, eu maximus risus pretium at. Morbi mi nisl, ultrices eget lacinia a, vulputate vel ligula. Duis vitae arcu in eros efficitur pharetra. Integer pretium porttitor lorem eu vehicula. Integer et ex sit amet est cursus scelerisque quis a libero.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="contact" class="contact">
 
     </div>
-    <div class="parallax" id="three">
+    <div class="mini-parallax" id="three">
       <div class="opacity flex-c">
       </div>
     </div>
