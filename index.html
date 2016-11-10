@@ -12,14 +12,26 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-    	$(document).ready(function() {
-    		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-    			var page = $(this).attr('href'); // Page cible
-    			var speed = 750; // Durée de l'animation (en ms)
-    			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-    			return false;
-    		});
-    	});
+      var borderTop;
+      var borderBot;
+      var borderLeft;
+      var borderRight;
+      $(document).ready(function() {
+        borderTop = $(".bandeau").height()*0.80;
+        borderRight = $(".timg").width()*0.65;
+        borderLeft = $(".timg").width()*0.35;
+        borderBot = $(".bandeau").height()*0.20;
+        $('.timg').css({'border-top-width':+ borderTop +'px'})
+        $('.timg').css({'border-right-width':+ borderRight +'px'})
+        $('.timg').css({'border-left-width':+ borderLeft +'px'})
+        $('.timg').css({'border-bottom-width':+ borderBot +'px'})
+        // $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+        // 	var page = $(this).attr('href'); // Page cible
+        // 	var speed = 750; // Durée de l'animation (en ms)
+        // 	$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        // 	return false;
+        // });
+      });
     </script>
   </head>
   <body>
