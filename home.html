@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Domaine St-Roch</title>
+    <link rel="icon" type="image/png" href="pics/flavicon.png" />
+		<script src="js/segment.min.js"></script>
+		<script src="js/ease.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    			var page = $(this).attr('href'); // Page cible
+    			var speed = 750; // Durée de l'animation (en ms)
+    			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    			return false;
+    		});
+    	});
+    </script>
+  </head>
+  <body>
+    <div id="menu-icon-wrapper" class="menu-icon-wrapper flex-c" style="visibility: visible;">
+  		<svg width="1000px" height="1000px">
+  			<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800" style="stroke-dashoffset: 5803.15; stroke-dasharray: 2901.57, 2981.57, 240;"></path>
+  			<path id="pathB" d="M 300 500 L 700 500" style="stroke-dashoffset: 800; stroke-dasharray: 400, 480, 240;"></path>
+  			<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200" style="stroke-dashoffset: 6993.11; stroke-dasharray: 3496.56, 3576.56, 240;"></path>
+  		</svg>
+  		<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+  	</div>
+    <div id="dummy" class="dummy">
+      <nav>
+        <ul>
+          <li><a class="js-scrollTo" href="#">Acitivités</a></li>
+          <li><a class="js-scrollTo" href="#">Chambres</a></li>
+          <li><a class="js-scrollTo" href="#">Restaurant</a></li>
+          <li><a class="js-scrollTo" href="#">Séminaire</a></li>
+          <li><a class="js-scrollTo" href="#contact">Contact</a></li>
+        </ul>
+
+      </nav>
+		</div>
+    <div class="parallax" id="one">
+      <div class="opacity flex-c">
+        <div class="logo">
+
+        </div>
+      </div>
+    </div>
+    <div class="bandeau flex-r">
+      <div class="timg">
+      </div>
+      <div class="flex-c activite">
+        <h2>Acitivités</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus rutrum nisi vitae gravida. Proin euismod nulla elit, eu maximus risus pretium at. Morbi mi nisl, ultrices eget lacinia a, vulputate vel ligula. Duis vitae arcu in eros efficitur pharetra. Integer pretium porttitor lorem eu vehicula. Integer et ex sit amet est cursus scelerisque quis a libero.</p>
+      </div>
+    </div>
+    <div class="parallax" id="two">
+      <div class="opacity flex-c">
+      </div>
+    </div>
+    <div id="contact" class="contact">
+
+    </div>
+    <div class="parallax" id="three">
+      <div class="opacity flex-c">
+      </div>
+    </div>
+  	<script src="js/main.js"></script>
+  </body>
+</html>

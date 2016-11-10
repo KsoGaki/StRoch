@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond";
+}
+
+sub {
+  vertical-align: super;
+}
+
+html,body,.opacity,.parallax  {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-c {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-r {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.parallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#one {
+  background-image: url(../pics/bgi.jpg);
+}
+
+#two {
+  background-image: url(../pics/bd.jpg);
+}
+
+#three {
+  background-image: url(../pics/room.jpg);
+}
+
+.opacity {
+  background-color:rgba(0, 0, 0, 0.8);
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity img {
+  width: 50%;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  background-image: url(../pics/logo3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 50%;
+}
+
+.bandeau {
+  width: 100%;
+  height: 50%;
+  background-image: url(http://e-sushi.fr/imagearticle/2016/06/spa-1024x410.jpg);
+}
+
+.timg {
+  width: 45%;
+  border-bottom : white solid 75px;
+  border-left : rgba(0, 0, 0, 0.5) solid 425px;
+  border-top : rgba(0, 0, 0, 0.5) solid 425px;
+  border-right : white solid 75px;
+}
+
+.timg img{
+  position: relative;
+  left:-250px;
+}
+
+.activite {
+  width: 65%;
+  height: 100%;
+  background-color: white;
+}
+
+
+
+/*=============================================>>>>>
+= Menu-Button =
+===============================================>>>>>*/
+
+.menu-icon-wrapper {
+  position: fixed;
+  height: 75px;
+  width: 75px;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: 0.1s;
+  z-index: 9999;
+  right:0;
+  background-color: #08997f;
+}
+
+.menu-icon-wrapper.scaled {
+	-webkit-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.menu-icon-wrapper svg {
+	-webkit-transform: scale(0.075);
+	-ms-transform: scale(0.075);
+	transform: scale(0.075);
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu-icon-wrapper path {
+	stroke: white;
+	stroke-width: 35px;
+	stroke-linecap: round;
+  stroke-linejoin: round;
+	fill: transparent;
+}
+
+.menu-icon-wrapper .menu-icon-trigger {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	pointer-events: auto;
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-icon-wrapper .menu-icon-trigger:hover,
+.menu-icon-wrapper .menu-icon-trigger:focus {
+	outline: none;
+}
+
+.dummy {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+
+.dummy--active {
+  height: 75px;
+}
+
+.dummy nav {
+  width: 45%;
+  margin: 0 auto;
+}
+.dummy nav ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+  font-size: 175%;
+}
+
+.dummy li::after {
+  content: "";
+  height: 2px;
+  display: block;
+  background-color: #08997f;
+  width: 0;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.dummy li:hover::after {
+  width: 100%;
+}
