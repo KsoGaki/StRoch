@@ -79,8 +79,42 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="contact">
+    <div id="contact" class="contact flex-r">
+      <div class="form flex-c">
+        <h1>Contactez-moi</h1>
+        <form class="cf">
+          <div class="half lefte cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="half righte cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+      </div>
+      <div class="google">
+        <div id="map"></div>
+      </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script>
+      var myLatlng = new google.maps.LatLng(50.061523, 4.496015);
+      var mapOptions = {
+        zoom: 15,
+        center: myLatlng
+      }
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          title:"Domaine Saint Roch"
+      });
+
+      // To add the marker to the map, call setMap();
+      marker.setMap(map);
+    </script>
   	<script src="js/main.js"></script>
   </body>
 </html>
