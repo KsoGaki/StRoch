@@ -430,3 +430,27 @@ form textarea {
     height: 50%;
   }
 }
+@media (max-width: 500px) {
+
+.mini-parallax{
+    height: 150%;
+  }
+  .contact {
+    height: 200%;
+  }
+
+  .contenue {
+    width: 100%;
+    height: 50%;
+  }
+  .left {
+    justify-content: flex-start;
+  }
+  .contenue p {
+    font-size: 125%;
+  }
+  .google,.form {
+    width: 100%;
+    height: 50%;
+  }
+}
