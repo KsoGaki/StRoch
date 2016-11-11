@@ -74,6 +74,10 @@ li {
   background-image: url(../pics/spa.jpeg);
 }
 
+#five {
+  background-image: url(../pics/restaurant.png);
+}
+
 .opacity {
   background-color:rgba(0, 0, 0, 0.8);
   background-attachment: fixed;
