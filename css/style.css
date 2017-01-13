@@ -156,7 +156,8 @@ li {
 
 .contenue h2 {
   color: #08997f;
-  font-size: 300%;
+  font-size: 275%;
+  margin-bottom: 15px;
 }
 
 .contenue h2::after {
@@ -173,7 +174,7 @@ li {
 }
 
 .contenue p {
-  font-size: 200%;
+  font-size: 150%;
   width: 100%;
 }
 
