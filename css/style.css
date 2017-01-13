@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 p {
-   font-size: 16px;
+   font-size: 14px;
    justify-content: middle;
 }
 
@@ -427,7 +427,7 @@ form textarea {
     justify-content: flex-start;
   }
   .contenue p {
-    font-size: 125%;
+    font-size: 75%;
   }
   .google,.form {
     width: 100%;
@@ -451,7 +451,7 @@ form textarea {
     justify-content: flex-start;
   }
   .contenue p {
-    font-size: 125%;
+    font-size: 100%;
   }
   .google,.form {
     width: 100%;
